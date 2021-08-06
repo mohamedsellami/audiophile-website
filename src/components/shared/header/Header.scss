@@ -127,3 +127,24 @@ header {
     }
   }
 }
+
+@media screen and(max-width: 500px) {
+  header {
+    width: 100%;
+    margin: 0;
+    padding: 8% 5%;
+    .logo-conatiner {
+      width: 75%;
+    }
+    .logo {
+      width: 38vw;
+    }
+    .burger-icon {
+      width: 4.5vw;
+      margin-right: 30%;
+    }
+    .cart {
+      width: 6.5vw;
+    }
+  }
+}
