@@ -7,6 +7,14 @@ import closeIcon from '../../../assets/shared/tablet/close.svg'
 
 function Header() {
 
+    window.addEventListener('resize', function(){
+        if(window.innerWidth > 800){
+            document.querySelector('header nav').style.transform = 'translateX(0%)';
+        }else{
+            document.querySelector('header nav').style.transform = 'translateX(-200%)';
+        }
+    });
+
     const openMenu = () =>{
         document.querySelector('header nav').style.transform = 'translateX(0%)';
         document.querySelector('header .bg').style.display = 'block';
