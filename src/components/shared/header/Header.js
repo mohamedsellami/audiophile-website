@@ -12,6 +12,7 @@ function Header() {
             document.querySelector('header nav').style.transform = 'translateX(0%)';
         }else{
             document.querySelector('header nav').style.transform = 'translateX(-200%)';
+            document.querySelector('header .bg').style.display = 'none';
         }
     });
 
