@@ -8,7 +8,7 @@ import Footer from '../shared/footer/Footer'
 
 function Home() {
 
-    document.title = "Audiophile | Home";
+    document.title = "audiophile | Home";
 
     return (
         <div className="home">
