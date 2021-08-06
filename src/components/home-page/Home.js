@@ -7,6 +7,9 @@ import About from '../shared/about-audiophile/About'
 import Footer from '../shared/footer/Footer'
 
 function Home() {
+
+    document.title = "Audiophile | Home";
+
     return (
         <div className="home">
             <Header/>
