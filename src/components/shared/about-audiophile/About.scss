@@ -1,0 +1,105 @@
+@import "../../../color.scss";
+
+.about-audiophile {
+  padding: 0 10%;
+  padding-bottom: 15%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  .content {
+    height: 38.7vw;
+    width: 45%;
+    border-radius: 0.5vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    h2 {
+      font-size: 2.65vw;
+      text-transform: uppercase;
+      letter-spacing: 1.43px;
+      width: 26.5vw;
+      line-height: 3vw;
+      margin: 0;
+      margin-bottom: 5%;
+      color: $black;
+      span {
+        color: $main-color;
+      }
+    }
+    p {
+      margin: 0;
+      font-size: 0.99vw;
+      color: $black;
+      line-height: 1.8vw;
+      width: 30.5vw;
+    }
+  }
+  .image-container {
+    height: 38.7vw;
+    width: 45%;
+    background-image: url(../../../assets/shared/desktop/image-best-gear.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 0.5vw;
+  }
+}
+
+@media screen and(max-width: 800px) {
+  .about-audiophile {
+    flex-direction: column-reverse;
+    padding: 10% 5%;
+    .image-container {
+      width: 100%;
+      border-radius: 1vw;
+      background-image: url(../../../assets/shared/tablet/image-best-gear.jpg);
+      height: 39vw;
+      margin-bottom: 3%;
+    }
+    .content {
+      width: 100%;
+      border-radius: 1vw;
+      height: 39vw;
+      align-items: center;
+      h2 {
+        width: 100%;
+        font-size: 5.2vw;
+        line-height: 6vw;
+        width: 65vw;
+        text-align: center;
+      }
+      p {
+        font-size: 1.99vw;
+        text-align: center;
+        width: 78vw;
+        line-height: 3vw;
+      }
+    }
+  }
+}
+
+@media screen and(max-width: 500px) {
+  .about-audiophile {
+    padding-bottom: 30%;
+    .image-container {
+      height: 80vw;
+      border-radius: 2vw;
+      background-image: url(../../../assets/shared/mobile/image-best-gear.jpg);
+      margin-bottom: 15%;
+    }
+    .content {
+      height: 100vw;
+      border-radius: 2vw;
+      h2 {
+        font-size: 7.5vw;
+        width: 78vw;
+        line-height: 10vw;
+        margin-bottom: 10%;
+      }
+      p {
+        width: 97%;
+        font-size: 4vw;
+        line-height: 6.5vw;
+      }
+    }
+  }
+}

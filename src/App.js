@@ -1,9 +1,10 @@
 import './App.scss';
+import Home from './components/home-page/Home';
 
 function App() {
   return (
     <div className="app">
-      hello world
+      <Home/>
     </div>
   );
 }

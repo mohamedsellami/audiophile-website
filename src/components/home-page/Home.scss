@@ -1,0 +1,443 @@
+@import "../../color.scss";
+
+.home {
+  .first-section {
+    width: 100%;
+    height: 100vh;
+    background-image: url(../../assets/home/desktop/image-hero.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    padding: 0 10%;
+    min-height: 30vw;
+    .content {
+      margin-top: 10%;
+      button {
+        width: 10.6vw;
+        height: 3.1vw;
+        font-size: 0.85vw;
+        background-color: $main-color;
+        color: $white;
+        border: none;
+        text-transform: uppercase;
+        font-weight: 700;
+        letter-spacing: 0.1vw;
+        cursor: pointer;
+        transition: all 0.5s ease;
+        &:hover {
+          background-color: #f1ba9a;
+        }
+      }
+      h6,
+      h1,
+      p {
+        margin: 0;
+      }
+      h6 {
+        color: $white;
+        font-size: 0.9vw;
+        letter-spacing: 0.6vw;
+        font-weight: 100;
+        margin-bottom: 4%;
+      }
+      h1 {
+        font-size: 3.7vw;
+        color: $white;
+        text-transform: uppercase;
+        letter-spacing: 0.1vw;
+        line-height: 1.1;
+        margin-bottom: 4%;
+      }
+      p {
+        font-size: 1vw;
+        color: $white;
+        font-weight: 100;
+        line-height: 2vw;
+        width: 23vw;
+        margin-bottom: 6%;
+      }
+    }
+  }
+
+  .second-section {
+    width: 100%;
+    padding: 0 10%;
+    .earphones {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 15%;
+      .left {
+        width: 49%;
+        height: 21.1vw;
+        border-radius: 0.5vw;
+        background-image: url(../../assets/home/desktop/image-earphones-yx1.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+      .right {
+        width: 49%;
+        height: 21.1vw;
+        border-radius: 0.5vw;
+        background-color: $secondary-color2;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        padding-left: 10%;
+        h2 {
+          font-size: 1.85vw;
+          letter-spacing: 1px;
+          color: $black;
+          margin: 0;
+          margin-bottom: 5%;
+        }
+        button {
+          width: 10.5vw;
+          height: 3.15vw;
+          font-size: 0.85vw;
+          text-transform: uppercase;
+          border: 0.1vw solid $black;
+          background-color: transparent;
+          color: $black;
+          font-size: 0.85vw;
+          letter-spacing: 1px;
+          cursor: pointer;
+          transition: all 0.5s ease;
+          &:hover {
+            background-color: $black;
+            color: $white;
+          }
+        }
+      }
+    }
+    .zx7speaker {
+      margin-bottom: 5%;
+      width: 100%;
+      height: 21.1vw;
+      border-radius: 0.5vw;
+      background-image: url(../../assets/home/desktop/image-speaker-zx7.jpg);
+      background-size: cover;
+      background-repeat: no-repeat;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      padding-left: 12%;
+      h2 {
+        font-size: 1.85vw;
+        letter-spacing: 1px;
+        color: $black;
+        margin-bottom: 3%;
+      }
+      button {
+        width: 10.5vw;
+        height: 3.1vw;
+        border: 0.1vw solid $black;
+        background-color: transparent;
+        color: $black;
+        text-transform: uppercase;
+        font-size: 0.85vw;
+        letter-spacing: 1px;
+        cursor: pointer;
+        transition: all 0.5s ease;
+        &:hover {
+          background-color: $black;
+          color: $white;
+        }
+      }
+    }
+    .zx9speaker {
+      width: 100%;
+      height: 40vw;
+      background-color: $main-color;
+      border-radius: 0.5vw;
+      overflow: hidden;
+      display: flex;
+      margin-bottom: 5%;
+      background-image: url(../../assets/home/desktop/pattern-circles.svg);
+      background-repeat: no-repeat;
+      background-size: 85%;
+      background-position: -63% 10%;
+      .image-container {
+        width: 50%;
+        height: 100%;
+        position: relative;
+        .speaker {
+          width: 27vw;
+          position: absolute;
+          bottom: -3%;
+          right: 0;
+        }
+      }
+      .content {
+        width: 50%;
+        height: 100%;
+        padding-left: 10%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        h2 {
+          font-size: 3.7vw;
+          color: $white;
+          letter-spacing: 2px;
+          line-height: 4vw;
+          margin: 0;
+          margin-bottom: 1vw;
+        }
+        p {
+          width: 22vw;
+          margin: 0;
+          color: $white;
+          font-weight: 100;
+          font-size: 0.94vw;
+          line-height: 1.7vw;
+          margin-bottom: 5vw;
+        }
+        button {
+          width: 10.5vw;
+          height: 3.1vw;
+          border: none;
+          background-color: $black;
+          color: $white;
+          text-transform: uppercase;
+          font-size: 0.85vw;
+          letter-spacing: 1px;
+          cursor: pointer;
+          transition: all 0.5s ease;
+          &:hover {
+            background-color: rgb(88, 88, 88);
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and(max-width: 800px) {
+  .home {
+    .first-section {
+      background-image: url(../../assets/home/tablet/image-header.jpg);
+      justify-content: center;
+      padding: 0 5%;
+      .content {
+        button {
+          display: block;
+          margin: auto;
+          width: 21.5vw;
+          height: 6.5vw;
+          font-size: 1.8vw;
+          letter-spacing: 0.2vw;
+        }
+        h1,
+        h6,
+        p {
+          text-align: center;
+        }
+        h6 {
+          font-size: 1.9vw;
+          letter-spacing: 1.4vw;
+          margin-bottom: 6%;
+        }
+        h1 {
+          font-size: 7.6vw;
+          margin-bottom: 6%;
+        }
+        p {
+          margin: auto;
+          width: 46vw;
+          font-size: 2.1vw;
+          line-height: 3.5vw;
+          margin-bottom: 8%;
+        }
+      }
+    }
+
+    .second-section {
+      padding: 0 5%;
+      .earphones {
+        .left {
+          height: 41.7vw;
+          background-image: url(../../assets/home/tablet/image-earphones-yx1.jpg);
+          border-radius: 1vw;
+        }
+        .right {
+          height: 41.7vw;
+          padding-left: 5%;
+          border-radius: 1vw;
+          h2 {
+            font-size: 3.6vw;
+          }
+          button {
+            width: 20.8vw;
+            height: 6.2vw;
+            font-size: 1.7vw;
+          }
+        }
+      }
+      .zx7speaker {
+        background-image: url(../../assets/home/tablet/image-speaker-zx7.jpg);
+        height: 41.6vw;
+        padding-left: 10%;
+        border-radius: 1px;
+        h2 {
+          font-size: 3.6vw;
+        }
+        button {
+          width: 21vw;
+          height: 6.3vw;
+          font-size: 1.7vw;
+        }
+      }
+      .zx9speaker {
+        flex-direction: column;
+        height: 95vw;
+        align-items: center;
+        background-size: 140%;
+        background-position: center 130%;
+        border-radius: 1vw;
+        .content {
+          justify-content: start;
+          padding-left: 0;
+          h2 {
+            font-size: 7.3vw;
+            text-align: center;
+            line-height: 8vw;
+            margin-bottom: 3vw;
+          }
+          p {
+            margin: 0 auto;
+            text-align: center;
+            font-size: 2vw;
+            width: 43vw;
+            line-height: 3vw;
+            margin-bottom: 5vw;
+          }
+          button {
+            width: 21vw;
+            height: 6.3vw;
+            font-size: 1.7vw;
+            display: block;
+            margin: 0 auto;
+          }
+        }
+        .image-container {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          .speaker {
+            position: static;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and(max-width: 500px) {
+  .home {
+    .first-section {
+      background-image: url(../../assets/home/mobile/image-header.jpg);
+      .content {
+        button {
+          width: 43vw;
+          height: 13vw;
+          font-size: 3.5vw;
+          letter-spacing: 0.3vw;
+        }
+        h6 {
+          font-size: 3.9vw;
+          letter-spacing: 2.6vw;
+          margin-bottom: 6%;
+        }
+        h1 {
+          font-size: 9.5vw;
+          margin-bottom: 6%;
+        }
+        p {
+          width: 80vw;
+          font-size: 4vw;
+          line-height: 7.5vw;
+          margin-bottom: 8%;
+        }
+      }
+    }
+
+    .second-section {
+      margin-bottom: 30%;
+      .earphones {
+        flex-direction: column;
+        .left {
+          width: 100%;
+          height: 53.5vw;
+          margin-bottom: 5%;
+          border-radius: 2vw;
+          background-image: url(../../assets/home/mobile/image-earphones-yx1.jpg);
+        }
+        .right {
+          width: 100%;
+          height: 53.5vw;
+          border-radius: 2vw;
+          padding-left: 10%;
+          h2 {
+            font-size: 7.53vw;
+            margin-bottom: 10%;
+          }
+          button {
+            width: 43.2vw;
+            height: 12.8vw;
+            font-size: 3.5vw;
+          }
+        }
+      }
+      .zx7speaker {
+        background-image: url(../../assets/home/mobile/image-speaker-zx7.jpg);
+        height: 86vw;
+        border-radius: 2vw;
+        h2 {
+          font-size: 7.5vw;
+          margin-bottom: 8vw;
+          margin-top: 0;
+        }
+        button {
+          width: 43vw;
+          height: 13vw;
+          font-size: 3.5vw;
+        }
+      }
+      .zx9speaker {
+        border-radius: 2vw;
+        height: 160vw;
+        background-position: center -470%;
+        background-size: 170%;
+        .content {
+          width: 100%;
+          h2 {
+            font-size: 9.7vw;
+            line-height: 10vw;
+            margin-bottom: 7vw;
+            margin-top: 2vw;
+          }
+          p {
+            font-size: 4vw;
+            width: 80vw;
+            line-height: 7vw;
+            letter-spacing: 1px;
+          }
+          button {
+            width: 43vw;
+            height: 13vw;
+            font-size: 3.5vw;
+            letter-spacing: 0.3vw;
+          }
+        }
+        .image-container {
+          .speaker {
+            width: 46vw;
+          }
+        }
+      }
+    }
+  }
+}
